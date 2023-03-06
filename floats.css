@@ -10,31 +10,32 @@
     /* Centra el bloque principal con margin 0 arriba-abajo 
     y auto derecha-izquierda */
     margin: 0 auto;
+
+    display: grid;
+    grid-template-areas: 
+                'header header header'
+                'menu content content'
+                'footer footer footer';
 }
 
 .header{
     background-color: blueviolet;
     height: 60px;
-}
-
-.wrapper{
-    background-color: crimson;
-    /* Con el elemento flex, los objetos hijos se alinean
-    uno delante del otro */
-    display: flex;
+    grid-area: header;
 }
 
 .menu{
     background-color: darkblue;
     color: aliceblue;
-    width: 30%;
+    grid-area: menu;
 }
 
 .content{
     background-color: gold;
-    width: 70%;
+    grid-area: content;
 }
 
 .footer{
     background-color: green;
+    grid-area: footer;
 }
