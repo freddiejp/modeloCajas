@@ -19,25 +19,22 @@
 
 .wrapper{
     background-color: crimson;
+    /* Con el elemento flex, los objetos hijos se alinean
+    uno delante del otro */
+    display: flex;
 }
 
 .menu{
     background-color: darkblue;
     color: aliceblue;
     width: 30%;
-    /* Posiciona la caja a la izquierda */
-    float: left;
 }
 
 .content{
     background-color: gold;
     width: 70%;
-    /* Posiciona la caja al lado de caja menu */
-    float: left;
 }
 
 .footer{
     background-color: green;
-    /* Posiciona pie de pagina abajo de menu y contenido */
-    clear: both;
 }
