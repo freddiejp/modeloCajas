@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: aquamarine;
+    max-width: 800px;
+    /* Centra el bloque principal con margin 0 arriba-abajo 
+    y auto derecha-izquierda */
+    margin: 0 auto;
+}
+
+.header{
+    background-color: blueviolet;
+    height: 60px;
+}
+
+.wrapper{
+    background-color: crimson;
+}
+
+.menu{
+    background-color: darkblue;
+    color: aliceblue;
+    width: 30%;
+    /* Posiciona la caja a la izquierda */
+    float: left;
+}
+
+.content{
+    background-color: gold;
+    width: 70%;
+    /* Posiciona la caja al lado de caja menu */
+    float: left;
+}
+
+.footer{
+    background-color: green;
+    /* Posiciona pie de pagina abajo de menu y contenido */
+    clear: both;
+}
